@@ -1,0 +1,36 @@
+Command: make -j2
+Exit code: 0
+Kernel: 7.0.0-31-generic
+Result: built 88XXau.ko successfully. Compiler/objtool warnings occurred; BTF generation skipped because vmlinux was unavailable.
+No installation or module reload performed.
+
+Build output (last 25 lines):
+  CC [M]  hal/phydm/halrf/rtl8821a/halrf_iqk_8821a_ce.o
+  CC [M]  hal/phydm/rtl8814a/halhwimg8814a_bb.o
+  CC [M]  hal/phydm/rtl8814a/halhwimg8814a_mac.o
+  CC [M]  hal/phydm/rtl8814a/halhwimg8814a_rf.o
+  CC [M]  hal/phydm/halrf/rtl8814a/halrf_iqk_8814a.o
+  CC [M]  hal/phydm/rtl8814a/phydm_regconfig8814a.o
+  CC [M]  hal/phydm/halrf/rtl8814a/halrf_8814a_ce.o
+  CC [M]  hal/phydm/rtl8814a/phydm_rtl8814a.o
+  CC [M]  hal/phydm/txbf/haltxbf8814a.o
+  CC [M]  platform/platform_ops.o
+  CC [M]  core/rtw_mp.o
+  LD [M]  88XXau.o
+88XXau.o: warning: objtool: mp_xmit_packet_thread+0x19c: kthread_thread_exit() missing __noreturn in .c/.h or NORETURN() in noreturns.h
+  MODPOST Module.symvers
+  CC [M]  88XXau.mod.o
+  CC [M]  .module-common.o
+  LD [M]  88XXau.ko
+  BTF [M] 88XXau.ko
+Skipping BTF generation for 88XXau.ko due to unavailability of vmlinux
+make[2]: Leaving directory '/home/melco/usb-wifi-setup'
+make[1]: Leaving directory '/usr/src/linux-headers-7.0.0-31-generic'
+---------------------------------------------------------------------------
+Visit https://github.com/aircrack-ng/rtl8812au for support/reporting issues
+or check for newer versions (branches) of these drivers.
+---------------------------------------------------------------------------
+
+DKMS status:
+8812au/5.6.4.2_35491.20191025, 7.0.0-30-generic, x86_64: installed
+8812au/5.6.4.2_35491.20191025, 7.0.0-31-generic, x86_64: installed
